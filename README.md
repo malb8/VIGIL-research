@@ -191,6 +191,7 @@ The problem strongly overlaps with:
 ```text
 System 1 vs System 2 decision-making
 ```
+See: [https://thedecisionlab.com/reference-guide/philosophy/system-1-and-system-2-thinking]
 
 where fast operational behavior overrides deliberate inspection.
 
