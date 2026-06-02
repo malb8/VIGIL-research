@@ -64,7 +64,7 @@ Most phishing-awareness training focuses primarily on:
 - suspicious attachments
 - obvious scams
 
-While useful, these approaches often do not address: https://test.net
+While useful, these approaches often do not address:
 
 - workflow habituation
 - cognitive automation
@@ -129,6 +129,8 @@ Potentially workflow-conditioned external navigations can be gated with:
 - hostname visibility
 - redirect visibility
 - risk indicators
+- domain similarity indicators
+- homoglyph detection
 - confirmation challenges
 - hostname typing verification
 - cooling-off delays
@@ -210,12 +212,22 @@ rather than a traditional phishing detector.
 Current baseline:
 
 ```text
-v0.4.0 Initial Release
+v0.4.0 – First Chrome Web Store submission
 ```
 
 # Documentation
 
 Additional documentation:
+
+Additional public documentation:
+
+- THREAT_MODEL.md
+- HUMAN_FACTORS.md
+- KNOWN_LIMITATIONS.md
+- SECURITY.md
+- PRIVACY.md
+
+---
 
 # Threat model scope
 
@@ -261,7 +273,7 @@ The extension is intended to reduce specific classes of workflow-conditioned nav
 
 This repository contains selected public research material related to the VIGIL Gate project.
 
-The browser extension implementation, internal architecture, development workflows, CI/CD processes, test automation and release engineering artifacts are not published in this repository.
+The browser extension implementation, internal architecture, development workflows, CI/CD processes, test automation and release engineering artifacts are not published in this repository. This repository focuses on the research concepts, threat models, human factors and security considerations that underpin the project.
 
 The project remains an active research initiative and public documentation may evolve over time.
 
