@@ -207,94 +207,12 @@ rather than a traditional phishing detector.
 
 ---
 
-# Development setup
-
-## Install dependencies
-
-```bash
-npm ci
-```
-
-## Run unit tests
-
-```bash
-npm test
-```
-
-## Run end-to-end tests
-
-```bash
-npm run e2e
-```
-
-## Run the complete local CI pipeline
-
-```bash
-npm run ci
-```
-
-## Validate extension structure
-
-```bash
-npm run validate
-```
-
-## Package extension
-
-```bash
-npm run package
-```
-
----
-
-# Testing strategy
-
-The project uses:
-
-- unit testing
-- Playwright end-to-end testing
-- CI-based regression validation
-- security regression scenarios
-
-Current E2E coverage includes:
-
-- extension loading
-- gate continuation
-- redirect-chain handling
-- tab isolation
-- token replay prevention
-- invalid token rejection
-- forged click-marker resistance
-- URL scheme handling
-- normal browsing preservation
-
----
-
-# CI / DevSecOps
-
-GitHub Actions currently performs:
-
-- dependency installation
-- extension validation
-- unit tests
-- Playwright browser tests
-- packaging
-- artifact generation
-
-Local CI simulation:
-
-```bash
-npm run ci
-```
-
----
-
 # Current project status
 
 Current baseline:
 
 ```text
-v0.3.2-devsecops-baseline
+v0.4.0 Initial Release
 ```
 
 Current focus areas:
@@ -313,21 +231,6 @@ Current focus areas:
 # Documentation
 
 Additional documentation:
-
-```text
-docs/
-├── ARCHITECTURE.md
-├── DEVSECOPS.md
-├── HUMAN_FACTORS.md
-├── PRIVACY.md
-├── RELEASE_PROCESS.md
-├── SECURITY.md
-├── STORE_SUBMISSION.md
-├── TESTING.md
-└── THREAT_MODEL.md
-```
-
----
 
 # Threat model scope
 
