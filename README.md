@@ -49,7 +49,7 @@ workflow familiarity
 
 The problem is often not lack of security knowledge.
 
-The problem is operational autopilot.
+The problem is 'operational autopilot'.
 
 ---
 
