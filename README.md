@@ -1,6 +1,12 @@
 # VIGIL Gate
 
-VIGIL Gate is a Chromium browser extension that intercepts selected external browser navigations and introduces a deliberate verification boundary before navigation continues.
+VIGIL Gate is a Sentyra research initiative exploring workflow-aware browser security, trust-transition verification and contextual user assurance. It is a Chromium browser extension that intercepts selected external browser navigations and introduces a deliberate verification boundary before navigation continues.
+
+Project website:
+https://sentyra.nl/onderzoek/vigil-gate/
+
+Privacy Policy:
+https://sentyra.nl/onderzoek/vigil-gate/privacy/
 
 The project focuses on a specific security problem that traditional phishing defenses and awareness training often fail to address:
 
@@ -146,15 +152,6 @@ The extension is designed around several defensive principles:
 - explicit verification boundaries
 - browser-native security constraints
 
-The gate page itself is intentionally not authoritative.
-
-The background service worker owns:
-
-- navigation approval state
-- token lifecycle
-- redirect-chain handling
-- continuation authorization
-
 ---
 
 # Privacy principles
@@ -215,19 +212,6 @@ Current baseline:
 v0.4.0 Initial Release
 ```
 
-Current focus areas:
-
-- production hardening
-- regression stability
-- extension-store readiness
-- security review
-- privacy review
-- usability tuning
-- permission minimization
-- defensive architecture refinement
-
----
-
 # Documentation
 
 Additional documentation:
@@ -272,21 +256,18 @@ The extension is intended to reduce specific classes of workflow-conditioned nav
 
 ---
 
-# Contributing
+# Public repository scope
 
-The project is currently evolving rapidly.
+This repository contains selected public research material related to the VIGIL Gate project.
 
-When contributing:
+The browser extension implementation, internal architecture, development workflows, CI/CD processes, test automation and release engineering artifacts are not published in this repository.
 
-- keep permissions minimal
-- preserve local-first behavior
-- avoid telemetry dependencies
-- maintain regression coverage
-- document security-sensitive changes
-- preserve usability during normal browsing
+The project remains an active research initiative and public documentation may evolve over time.
 
 ---
 
 # License
 
-License status currently pending final project decision.
+Documentation copyright © Sentyra.
+
+Licensing terms for project materials may be updated as the research evolves.
