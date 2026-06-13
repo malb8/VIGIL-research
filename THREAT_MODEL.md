@@ -36,6 +36,8 @@ VIGIL primarily focuses on:
 * workflow-driven browser navigations
 * phishing attacks that exploit trusted workflows
 * OAuth and identity-flow abuse that relies on user trust transfer
+* lookalike and homoglyph domain attacks that visually impersonate legitimate destinations
+* first-contact domain deception — novel or rarely-visited domains appearing in familiar workflow navigations
 
 ---
 
@@ -50,6 +52,7 @@ VIGIL does not attempt to address:
 * physical access compromise
 * network-level compromise
 * user-approved malicious destinations
+* destinations approved within a recent session — VIGIL uses short-lived approval state; an attack timed immediately after a legitimate approval of the same destination may not be re-gated
 * attacker-controlled systems that the user consciously chooses to trust
 * compromise of trusted SaaS providers
 * account compromise that has already occurred
