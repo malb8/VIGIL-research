@@ -23,4 +23,5 @@ The project introduces deliberate verification into workflow-driven browser navi
 - tab isolation
 - redirect-chain handling
 - forged message resistance
-- CI-enforced regression testing
+- Unicode normalization for homoglyph and lookalike domain detection
+- CI-enforced regression testing with unit and E2E coverage

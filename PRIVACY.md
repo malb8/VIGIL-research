@@ -32,10 +32,22 @@ This may include:
 
 * extension settings
 * allowlists
+* domain familiarity history (local, time-weighted, not transmitted)
 * temporary navigation state
 * short-lived approval state required for navigation verification
 
 No local data is transmitted to external services.
+
+## Domain familiarity
+
+VIGIL passively learns which domains a user visits during workflow-driven browser sessions. This familiarity model is stored entirely within the local browser profile and is used only to generate contextual signals within the gate interface.
+
+Domain familiarity data:
+
+* is never transmitted to external services
+* is never shared with Sentyra
+* is not used for analytics or profiling
+* remains under the user's control via standard browser profile management
 
 ---
 

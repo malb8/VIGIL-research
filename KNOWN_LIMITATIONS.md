@@ -20,6 +20,11 @@
 * deliberate verification checkpoints
 * targeted micro-friction at workflow trust-transition points
 * opportunities for conscious reassessment before navigation continues
+* domain familiarity signals based on local visit history
+* identity flow and OAuth context signals
+* homoglyph and lookalike domain detection
+* composite risk findings that synthesize multiple signals
+* redirect-chain visibility and trusted-redirector identification
 
 ## Important
 

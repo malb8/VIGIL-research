@@ -59,3 +59,11 @@ Rather than classifying websites as safe or malicious, the extension focuses on 
 In that sense, VIGIL is not a trust engine.
 
 It is a workflow-aware verification checkpoint intended to make trust transitions more visible before navigation continues.
+
+## Warning fatigue as a design constraint
+
+Security controls that trigger too frequently — or that surface too many low-value signals — risk becoming ineffective through habituation. Users learn to dismiss warnings without reading them, which can leave them more exposed than no warning at all.
+
+VIGIL is designed with warning fatigue as an explicit constraint. The gate distinguishes between signals that genuinely indicate elevated risk and signals that provide contextual information without independently warranting alarm. Composite findings synthesize multiple signals into a single coherent narrative rather than presenting a list of disconnected technical observations.
+
+The goal is for each gate interaction to remain meaningful: frequent enough to intercept genuine workflow-conditioned trust transitions, rare enough that users continue to engage with what they are shown.
