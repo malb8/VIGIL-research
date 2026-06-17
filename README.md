@@ -26,8 +26,6 @@ A note on terminology: this README uses **workflow-conditioned trust** as the
 plain-language name for the problem. The papers formalize the same problem as
 the **workflow security gap**, and the moments where it is exploited as
 **trust transitions**. The terms describe one problem at different altitudes.
-```
-
 
 The project focuses on a specific security problem that traditional phishing defenses and awareness training often fail to address:
 
