@@ -8,6 +8,9 @@ https://sentyra.nl/onderzoek/vigil-gate/
 Privacy Policy:
 https://sentyra.nl/onderzoek/vigil-gate/privacy/
 
+Chrome extension VIGIL-Gate:
+https://chromewebstore.google.com/detail/vigil-gate/acedlklfcifjopaofgpffloeggbbmjcp
+
 # Research papers
 
 VIGIL Gate is the browser implementation of a broader research initiative.
