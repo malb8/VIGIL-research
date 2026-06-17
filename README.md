@@ -62,8 +62,7 @@ This creates a cognitive shortcut:
 The trust is transferred automatically from:
 
 ```text
-workflow familiarity
-→ destination legitimacy
+workflow familiarity → destination legitimacy
 ```
 
 The problem is often not lack of security knowledge.
