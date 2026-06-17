@@ -1,6 +1,6 @@
 # VIGIL Gate
 
-VIGIL Gate is a Sentyra research initiative exploring workflow-aware browser security, trust-transition verification and contextual user assurance. It is a Chromium browser extension that intercepts selected external browser navigations and introduces a deliberate verification boundary before navigation continues.
+VIGIL Gate is a Sentyra research initiative exploring workflow-aware browser security, trust-transition verification and contextual user assurance. It is a Chromium browser extension that intercepts selected external browser navigations and introduces a deliberate verification boundary before navigation continues. 
 
 Project website:
 https://sentyra.nl/onderzoek/vigil-gate/
