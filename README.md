@@ -16,7 +16,7 @@ Two papers document the underlying model:
 - **Architecture Positioning Paper** (v1.2) — for security architects and CISOs:
   the workflow security gap, trust transitions, the VIGIL architecture, and the
   workflow-context signal-layer vision.
-  [VIGIL_Architecture_Positioning_Paper.pdf](./VIGIL_Architecture_Positioning_Paper.pdf)
+  [VIGIL_Architecture_Positioning_Paper.pdf](VIGIL Architecture Positioning Paper.pdf)
 
 - **Research Paper** — for academic and research audiences: research hypothesis,
   threat model, taxonomy, proposed evaluation methodology, and limitations.
