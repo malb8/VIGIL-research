@@ -8,9 +8,6 @@ https://sentyra.nl/onderzoek/vigil-gate/
 Privacy Policy:
 https://sentyra.nl/onderzoek/vigil-gate/privacy/
 
-Chrome extension VIGIL-Gate:
-https://chromewebstore.google.com/detail/vigil-gate/acedlklfcifjopaofgpffloeggbbmjcp
-
 # Research papers
 
 VIGIL Gate is the browser implementation of a broader research initiative.
@@ -19,11 +16,10 @@ Two papers document the underlying model:
 - **Architecture Positioning Paper** (v1.2) — for security architects and CISOs:
   the workflow security gap, trust transitions, the VIGIL architecture, and the
   workflow-context signal-layer vision.
-  [VIGIL_Architecture_Positioning_Paper.pdf](./VIGIL_Architecture_Positioning_Paper.pdf)  <!-- ADJUST path -->
+  [VIGIL_Architecture_Positioning_Paper.pdf](./VIGIL_Architecture_Positioning_Paper.pdf)
 
 - **Research Paper** — for academic and research audiences: research hypothesis,
   threat model, taxonomy, proposed evaluation methodology, and limitations.
-  [VIGIL_Research_Paper.pdf](./VIGIL_Research_Paper.pdf)  <!-- ADJUST path / remove until published -->
 
 A note on terminology: this README uses **workflow-conditioned trust** as the
 plain-language name for the problem. The papers formalize the same problem as
