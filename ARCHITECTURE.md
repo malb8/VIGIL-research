@@ -54,6 +54,20 @@ The signal model currently includes observations related to destination characte
 
 ---
 
+Decision engine
+
+The decision engine is responsible for translating individual observations into a single navigation outcome.
+
+Rather than treating any individual signal as authoritative, it evaluates the complete navigation context. Positive indicators that reinforce an expected workflow are considered alongside observations that suggest increased uncertainty or elevated risk. The objective is not to produce a binary malicious-or-benign classification, but to determine whether the current navigation warrants renewed user attention.
+
+Before reaching a decision, the engine also evaluates contextual state. Recent user approvals, workflow continuity, and other transient conditions may suppress unnecessary interruptions during legitimate browsing while still allowing unexpected transitions to surface.
+
+The outcome of the evaluation is intentionally simple. A navigation is either allowed to continue transparently or temporarily paused so that the user can consciously verify the destination before proceeding.
+
+This separation between signal generation and decision making allows both parts of the architecture to evolve independently. New signals can be introduced without redesigning the decision engine, while improvements to decision logic do not require changes to individual signal producers.
+
+---
+
 ## Local decision engine
 
 All security decisions are performed locally within the browser.
