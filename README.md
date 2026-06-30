@@ -8,6 +8,12 @@ https://sentyra.nl/onderzoek/vigil-gate/
 Privacy Policy:
 https://sentyra.nl/onderzoek/vigil-gate/privacy/
 
+<<<<<<< HEAD
+=======
+Microsoft Edge Add-ons website with VIGIL-Gate as add-on:
+https://microsoftedge.microsoft.com/addons/detail/lpjkjnjmbnaekjjanfcpieefjjddmcop
+
+>>>>>>> 22a1d9d (Add Microsoft Edge Add-ons link to README)
 # Research papers
 
 VIGIL Gate is the browser implementation of a broader research initiative.
