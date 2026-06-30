@@ -2,13 +2,13 @@
 
 Thank you for your interest in VIGIL.
 
-This repository contains public research, architectural concepts and supporting documentation for the VIGIL project. Its purpose is to share ideas, encourage discussion and document the evolution of the research.
+This repository contains the public research, architectural concepts and supporting documentation behind the VIGIL project. Its purpose is to share ideas, encourage discussion and document the evolution of the research.
 
 ## Feedback
 
 Constructive feedback is always welcome.
 
-If you identify technical inaccuracies, unclear explanations, or opportunities to improve the material, please open an issue describing your observations.
+If you identify technical inaccuracies, unclear explanations, opportunities to improve the documentation, or relevant related work, please open an issue.
 
 Well-reasoned discussion is often more valuable than additional content.
 
@@ -24,13 +24,21 @@ Contributions that strengthen the research are particularly appreciated, includi
 * references to related work
 * corrections and factual improvements
 
-Please provide sources whenever possible.
+Please include sources whenever possible.
+
+## Browser extension feedback
+
+The VIGIL Gate browser extension is the practical implementation of the concepts described in this repository.
+
+Testing the extension in real-world scenarios and sharing observations is one of the most valuable ways to contribute to the project. Feedback on usability, workflow behaviour, navigation scenarios, false positives, false negatives, and overall user experience helps guide future development.
+
+Feature requests and implementation suggestions are also welcome. While the extension is not currently open source, community feedback plays an important role in shaping its direction.
 
 ## Scope
 
-The goal of this repository is to document the architectural concepts behind VIGIL rather than implementation details.
+This repository documents the architectural concepts behind VIGIL rather than the implementation itself.
 
-The browser extension and its internal implementation evolve independently from this public research repository.
+The browser extension evolves independently while remaining guided by the principles and research published here.
 
 ## Security
 
@@ -38,4 +46,4 @@ If you believe you have identified a security issue affecting the VIGIL browser 
 
 ## Thank you
 
-Thoughtful discussion, constructive criticism and references to related work all help improve the quality of the research.
+Whether you contribute through research, constructive discussion, or practical experience with the browser extension, your feedback helps improve both the architectural model and its implementation.
