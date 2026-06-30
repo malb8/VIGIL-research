@@ -54,29 +54,17 @@ The signal model currently includes observations related to destination characte
 
 ---
 
-Decision engine
+## Decision engine
 
-The decision engine is responsible for translating individual observations into a single navigation outcome.
+The decision engine is responsible for translating individual observations into a single navigation outcome. All evaluation is performed locally within the browser.
 
-Rather than treating any individual signal as authoritative, it evaluates the complete navigation context. Positive indicators that reinforce an expected workflow are considered alongside observations that suggest increased uncertainty or elevated risk. The objective is not to produce a binary malicious-or-benign classification, but to determine whether the current navigation warrants renewed user attention.
+Rather than treating any individual signal as authoritative, the engine evaluates the complete navigation context. It does not attempt to classify websites as inherently safe or malicious. Instead, it assesses whether a particular navigation event represents an expected continuation of the user's current workflow or an unexpected trust transition that warrants renewed user attention.
 
-Before reaching a decision, the engine also evaluates contextual state. Recent user approvals, workflow continuity, and other transient conditions may suppress unnecessary interruptions during legitimate browsing while still allowing unexpected transitions to surface.
+Positive indicators that reinforce workflow continuity are considered alongside observations that suggest increased uncertainty or elevated risk. Before reaching a decision, the engine also evaluates transient contextual state. Recent user approvals, workflow continuity, and other short-lived conditions may suppress unnecessary interruptions during legitimate browsing while still allowing unexpected transitions to surface.
 
-The outcome of the evaluation is intentionally simple. A navigation is either allowed to continue transparently or temporarily paused so that the user can consciously verify the destination before proceeding.
+The outcome of the evaluation is intentionally simple. A navigation either continues transparently or is temporarily paused so the user can consciously verify the destination before proceeding. Short-lived approval state prevents repeated interruptions during legitimate workflows while avoiding permanent trust decisions.
 
 This separation between signal generation and decision making allows both parts of the architecture to evolve independently. New signals can be introduced without redesigning the decision engine, while improvements to decision logic do not require changes to individual signal producers.
-
----
-
-## Local decision engine
-
-All security decisions are performed locally within the browser.
-
-The decision engine combines the collected signals, applies suppression rules where appropriate, and determines whether the navigation should continue immediately or whether a verification gate should be displayed.
-
-Short-lived approval state is maintained to avoid repeatedly interrupting users during legitimate workflows. Once a user has consciously approved a navigation, subsequent transitions to the same destination within a limited period can proceed without unnecessary friction.
-
-This balances usability with security while avoiding permanent trust decisions.
 
 ---
 
