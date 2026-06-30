@@ -1,12 +1,14 @@
 # Threat Model
 
-## Primary problem addressed
+## Security problem
 
-VIGIL Gate primarily addresses workflow-conditioned trust.
+Modern phishing increasingly succeeds by manipulating user trust rather than exploiting technical vulnerabilities.
 
-Modern attacks increasingly succeed by exploiting trusted workflows rather than relying solely on obviously malicious content.
+Attackers leverage familiar workflows, trusted applications, and expected navigation patterns to guide users toward attacker-controlled destinations. Rather than convincing users to ignore security warnings, many attacks exploit the fact that users naturally transfer trust from one step in a familiar workflow to the next.
 
-Users frequently transfer trust from familiar workflows to browser navigations without consciously reassessing the destination.
+VIGIL refers to this phenomenon as **workflow-conditioned trust**.
+
+The objective of VIGIL is to identify these trust transitions and introduce a deliberate verification point before sensitive interactions continue.
 
 Examples include:
 
@@ -19,61 +21,81 @@ Examples include:
 * calendar invitations
 * OAuth authorization flows
 
-VIGIL attempts to interrupt these automatic trust transitions and restore conscious verification before navigation continues.
-
 ---
 
 ## In-scope threats
 
-VIGIL primarily focuses on:
+VIGIL focuses on navigation-based attacks that exploit workflow-conditioned trust, including:
 
 * workflow-conditioned trust
 * automatic trust transfer
 * deceptive login journeys
+* identity-provider impersonation
 * credential-harvesting redirects
 * malicious redirect chains
 * external application browser launches
 * workflow-driven browser navigations
 * phishing attacks that exploit trusted workflows
 * OAuth and identity-flow abuse that relies on user trust transfer
+* consent phishing
+* trusted SaaS navigation abuse
+* AiTM phishing campaigns that depend on successfully directing users to attacker-controlled authentication pages
 * lookalike and homoglyph domain attacks that visually impersonate legitimate destinations
-* first-contact domain deception — novel or rarely-visited domains appearing in familiar workflow navigations
+* first-contact domain deception involving novel or rarely visited domains appearing within otherwise familiar workflows
 
 ---
 
 ## Out-of-scope threats
 
-VIGIL does not attempt to address:
+VIGIL does not attempt to mitigate:
 
 * endpoint compromise
 * malicious browser extensions
-* browser vulnerabilities and zero-days
-* malware with browser control
-* physical access compromise
+* browser vulnerabilities or zero-day exploits
+* malware capable of controlling the browser
+* physical device compromise
 * network-level compromise
-* user-approved malicious destinations
-* destinations approved within a recent session — VIGIL uses short-lived approval state; an attack timed immediately after a legitimate approval of the same destination may not be re-gated
-* attacker-controlled systems that the user consciously chooses to trust
 * compromise of trusted SaaS providers
-* account compromise that has already occurred
+* users who intentionally choose to trust an attacker-controlled destination
+* post-compromise attacker activity after credentials or authentication tokens have already been stolen
+* destinations approved within a recent browsing session, where VIGIL intentionally suppresses repeated prompts using short-lived approval state
 
 ---
 
 ## Security assumptions
 
-VIGIL assumes:
+VIGIL assumes that:
 
 * the browser is operating normally
-* the extension itself has not been tampered with
-* the operating system is not compromised
-* users remain responsible for final navigation decisions
+* the extension has not been modified or tampered with
+* the operating system has not been compromised
+* browser security mechanisms remain functional
+* users retain responsibility for final navigation decisions
 
-VIGIL is intended to complement existing browser, identity and phishing controls rather than replace them.
+VIGIL is intended to complement existing browser protections, identity controls, phishing detection, and enterprise security solutions rather than replace them.
+
+---
+
+## Design principles
+
+VIGIL is designed according to the following principles:
+
+* passive by default
+* workflow-aware rather than content-aware
+* privacy-preserving
+* local decision making
+* minimal browser permissions
+* explainable security decisions
+* complementary to existing browser and identity security controls
+
+VIGIL evaluates navigation context rather than attempting to classify every destination as malicious.
 
 ---
 
 ## Security objective
 
-The primary objective of VIGIL is not to determine whether a destination is safe.
+VIGIL does not attempt to determine whether a destination is objectively safe or malicious.
 
-The primary objective is to introduce deliberate verification at workflow trust-transition points and reduce the likelihood of automatic trust transfer.
+Instead, it evaluates whether a navigation represents an unexpected trust transition within the user's current workflow and determines whether additional user verification is appropriate before navigation continues.
+
+By interrupting automatic trust transfer at critical navigation points, VIGIL aims to reduce the success of phishing attacks that rely on manipulating user trust rather than exploiting technical vulnerabilities.
