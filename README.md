@@ -256,12 +256,16 @@ rather than a traditional phishing detector.
 ---
 
 # Current project status
+VIGIL is currently in public validation.
 
-```text
-v0.5.2 – Current release
-v0.5.0 – Domain familiarity model, identity flow detection, homoglyph improvements
-v0.4.0 – First Chrome Web Store submission
-```
+The VIGIL Gate browser extension has been approved for Microsoft Edge Add-ons and is available through the official Edge extension ecosystem. The research track contains the public architecture positioning material, while the browser extension continues to evolve separately as the implementation track.
+
+Current status:
+
+- Microsoft Edge Add-ons: live
+- Chrome Web Store: accepted / pending final publication status
+- Research repository: public positioning and architecture material
+- Extension implementation: v0.5.x development line
 
 # Documentation
 
